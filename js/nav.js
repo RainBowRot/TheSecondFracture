@@ -9,7 +9,7 @@
 
   const layer = document.querySelector(".petals");
   if (!layer) return;
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 8; i++) {
     const p = document.createElement("span");
     p.className = "petal";
     p.style.left = Math.random() * 100 + "vw";
