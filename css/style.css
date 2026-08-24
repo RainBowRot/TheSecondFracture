@@ -451,3 +451,15 @@ h2 {
   font-size: clamp(1.5rem, 3.4vw, 2.15rem);
   margin-bottom: 0.9rem;
 }
+
+/* Multi-plate chapters scroll as a folio, not a locked spread */
+.bound:has(.folio) {
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+.folio .leaf-art img {
+  max-height: 88svh;
+  object-fit: contain;
+}
+.leaf-text .quiet { color: var(--muted); font-style: italic; }
